@@ -1,0 +1,15 @@
+<div id="app">
+  <p>{{ message }}</p>
+  <p>
+    <a v-bind:href="url" v-if="toggle">Vue.js</a>
+  </p>
+  <p>
+  <ol>
+    <li v-for="l in languages">{{ l }}</li>
+  </ol>
+  </p>
+  <button v-on:click="Click">Click</button>
+  <p><input type="text" v-model="message"></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
+<script src="js/main.js"></script>
